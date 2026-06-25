@@ -129,3 +129,74 @@ contactForm.addEventListener('submit', event => {
 });
 
 calculateEstimate();
+
+// Fill gallery captions from image filenames / alt text
+document.querySelectorAll('.gallery-card').forEach(card => {
+  const img = card.querySelector('img');
+  const nameEl = card.querySelector('.g-name');
+  if (!img || !nameEl) return;
+  // derive a friendly name from alt or filename
+  let name = img.alt && img.alt !== 'Example Print' ? img.alt : img.src.split('/').pop().split('.')[0];
+  name = name.replace(/[-_\d]+/g, ' ').replace(/\b( jpg| jpeg| png)\b/gi, '').trim();
+  name = name.replace(/\b(guitarpick)\b/i, 'Guitar Pick');
+  name = name.replace(/carrotsword/i, 'Carrot Prop');
+  name = name.replace(/flexi rex/i, 'Articulated Rex');
+  name = name.replace(/dragon/i, 'Dragon Figurine');
+  name = name.replace(/fidget/i, 'Fidget Spinner');
+  name = name.replace(/wallet/i, 'Sliding Wallet');
+  name = name.replace(/jar/i, 'Jar Topper Spout');
+  nameEl.textContent = name;
+});
+
+// Quick view modal handling
+const previewModal = document.getElementById('preview-modal');
+const previewImg = document.getElementById('preview-img');
+const previewTitle = document.getElementById('preview-title');
+const previewDesc = document.getElementById('preview-desc');
+const previewClose = document.getElementById('preview-close');
+
+document.querySelectorAll('[data-action="quickview"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const image = btn.dataset.image;
+    const product = btn.dataset.product || 'Preview';
+    previewImg.src = image || '';
+    previewTitle.textContent = product;
+    previewDesc.textContent = '';
+    previewModal.classList.add('show');
+    previewModal.setAttribute('aria-hidden', 'false');
+  });
+});
+
+// Open preview when clicking a gallery image
+document.querySelectorAll('.gallery-card img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => {
+    if (!previewModal) return;
+    const card = img.closest('.gallery-card');
+    const title = card ? (card.querySelector('.g-name')?.textContent || img.alt) : img.alt;
+    const meta = card ? (card.querySelector('.g-meta')?.textContent || '') : '';
+    previewImg.src = img.src;
+    previewTitle.textContent = title || 'Preview';
+    previewDesc.textContent = meta;
+    previewModal.classList.add('show');
+    previewModal.setAttribute('aria-hidden', 'false');
+  });
+});
+
+if (previewClose) {
+  previewClose.addEventListener('click', () => {
+    previewModal.classList.remove('show');
+    previewModal.setAttribute('aria-hidden', 'true');
+    previewImg.src = '';
+  });
+}
+
+if (previewModal) {
+  previewModal.addEventListener('click', event => {
+    if (event.target === previewModal) {
+      previewModal.classList.remove('show');
+      previewModal.setAttribute('aria-hidden', 'true');
+      previewImg.src = '';
+    }
+  });
+}
