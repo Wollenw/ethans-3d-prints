@@ -939,3 +939,116 @@ button {
     border-radius: 16px;
   }
 }
+
+/* New component styles (mobile-first) */
+.lead {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.service-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background: rgba(77,156,255,0.06);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.timeline li {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.color-palette {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.faq-list details {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.review-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+@media (min-width: 600px) {
+  .service-grid { grid-template-columns: repeat(4, 1fr); }
+  .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1000px) {
+  .service-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .portfolio-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+}

@@ -11,382 +11,324 @@
     <div class="logo">Ethan's 3D Prints</div>
     <nav>
       <a href="#hero">Home</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#build">Custom Orders</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#build">Get a Quote</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="hero" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <span class="eyebrow">Premium 3D Prints</span>
-        <h1>Ethan’s 3D Prints</h1>
-        <p>Custom Designs. Fast Printing. Real-World Ideas.</p>
-        <div class="hero-actions">
-          <a href="#shop" class="btn btn-primary">Buy Prints</a>
-          <a href="#build" class="btn btn-secondary">Request a Custom Design</a>
+      <!-- Mobile-first professional hero -->
+      <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="eyebrow">Custom Manufacturing</span>
+          <h1>Ethan’s 3D Prints</h1>
+          <p class="lead">Professional custom 3D printing and design services — precise, reliable, and made to order.</p>
+          <div class="hero-actions">
+            <a href="#build" class="btn btn-primary">Request a Quote</a>
+            <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+          </div>
+          <div class="hero-visual">
+            <img src="Images/ethanmakesheader.jpg" alt="Ethan works on 3D prints in the workshop" />
+          </div>
         </div>
-        <div class="hero-stats">
-          <div><strong>48h</strong><span>Rush Available</span></div>
-          <div><strong>4.9★</strong><span>Customer Rating</span></div>
-          <div><strong>PLA + PETG</strong><span>Materials Ready</span></div>
-          <div><strong>Made in Illinois</strong><span>Printed by Ethan</span></div>
-        </div>
-        <div class="hero-visual">
-          <img src="Images/ethanmakesheader.jpg" alt="Ethan makes 3D prints in the workshop" onerror="this.style.display='none'" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="ordering" class="section">
-      <div class="section-header">
-        <div>
-          <p class="section-label">How Ordering Works</p>
-          <h2>Ordering Steps</h2>
+      <!-- Service categories -->
+      <section id="services" class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Services</p>
+            <h2>What We Do</h2>
+          </div>
+          <p>From functional replacements to bespoke prototypes — service categories tailored to your needs.</p>
         </div>
-        <p>Simple steps to get your print from idea to pickup.</p>
-      </div>
-      <div class="build-grid ordering-steps">
-        <div class="feature-card">
-          <h3>Step 1</h3>
-          <p>Submit your project idea or request.</p>
+        <div class="service-grid">
+          <article class="service-card" data-service="custom-designs">
+            <div class="service-icon">🎨</div>
+            <h3>Custom Designs</h3>
+            <p>Concept to CAD — tailored models ready for production or prototyping.</p>
+          </article>
+          <article class="service-card" data-service="functional-parts">
+            <div class="service-icon">⚙️</div>
+            <h3>Functional Parts</h3>
+            <p>Durable parts engineered for fit and function — replacements and assemblies.</p>
+          </article>
+          <article class="service-card" data-service="home-organization">
+            <div class="service-icon">📦</div>
+            <h3>Home Organization</h3>
+            <p>Smart organizers and mounts that improve daily life and reduce clutter.</p>
+          </article>
+          <article class="service-card" data-service="desk-accessories">
+            <div class="service-icon">🖥️</div>
+            <h3>Desk Accessories</h3>
+            <p>Polished, functional accessories for workspace efficiency and style.</p>
+          </article>
+          <article class="service-card" data-service="gifts-decorations">
+            <div class="service-icon">🎁</div>
+            <h3>Gifts & Decorations</h3>
+            <p>Unique keepsakes, seasonal pieces, and display items made to order.</p>
+          </article>
+          <article class="service-card" data-service="prototypes">
+            <div class="service-icon">🔬</div>
+            <h3>Prototypes & Projects</h3>
+            <p>Rapid iteration for product development and early-stage testing.</p>
+          </article>
+          <article class="service-card" data-service="replacement-parts">
+            <div class="service-icon">🔧</div>
+            <h3>Replacement Parts</h3>
+            <p>Accurate replacements for appliances, tools, and hobby gear.</p>
+          </article>
+          <article class="service-card" data-service="hobby-projects">
+            <div class="service-icon">🧩</div>
+            <h3>Hobby & Maker Projects</h3>
+            <p>Models, props, and collaborative maker work for creatives and builders.</p>
+          </article>
         </div>
-        <div class="feature-card">
-          <h3>Step 2</h3>
-          <p>Ethan reviews the request and provides a quote.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Step 3</h3>
-          <p>Choose your filament color.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Step 4</h3>
-          <p>The design is prepared and approved.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Step 5</h3>
-          <p>Printing begins.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Step 6</h3>
-          <p>Arrange pickup or delivery.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section trust-section">
-      <div class="trust-grid">
-        <article class="trust-card">
-          <h3>Fast Rush Printing</h3>
-          <p>48-hour rush turnaround is available on most prints, keeping your deadlines on track.</p>
-        </article>
-        <article class="trust-card">
-          <h3>Printed by Ethan</h3>
-          <p>Every model is produced personally in Illinois with quality control at every step.</p>
-        </article>
-        <article class="trust-card">
-          <h3>Custom Design Support</h3>
-          <p>From concept to finished print, I help you refine the design for real-world use.</p>
-        </article>
-        <article class="trust-card">
-          <h3>Premium Materials</h3>
-          <p>Choose PLA or PETG for strength, finish, and durability that stands out.</p>
-        </article>
-      </div>
-    </section>
+      <!-- Portfolio with filters -->
+      <section id="portfolio" class="section section-alt">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Portfolio</p>
+            <h2>Selected Work</h2>
+          </div>
+          <p>Examples of recent projects — images are representative of finished work.</p>
+          <p class="photo-note">Colors shown in photos may vary. Customers can choose their preferred filament color when ordering.</p>
+        </div>
+        <div class="filter-row portfolio-filters" role="tablist" aria-label="Portfolio filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="functional-parts">Functional</button>
+          <button class="filter-btn" data-filter="prototypes">Prototypes</button>
+          <button class="filter-btn" data-filter="gifts-decorations">Gifts</button>
+          <button class="filter-btn" data-filter="desk-accessories">Desk</button>
+          <button class="filter-btn" data-filter="replacement-parts">Replacement</button>
+        </div>
+        <div class="gallery-grid portfolio-grid" aria-live="polite">
+          <div class="gallery-card" data-category="functional-parts"><img src="Images/dragon.jpg" alt="Detailed figurine" /><div class="gallery-caption"><strong class="g-name">Dragon Figurine</strong><span class="g-meta">PLA · Example</span></div></div>
+          <div class="gallery-card" data-category="gifts-decorations"><img src="Images/flexieasterbunny.jpg" alt="Easter decoration" /><div class="gallery-caption"><strong class="g-name">Seasonal Decoration</strong><span class="g-meta">PLA · Example</span></div></div>
+          <div class="gallery-card" data-category="desk-accessories"><img src="Images/Wallet.jpg" alt="Sliding wallet" /><div class="gallery-caption"><strong class="g-name">Sliding Wallet</strong><span class="g-meta">PLA · Example</span></div></div>
+          <div class="gallery-card" data-category="prototypes"><img src="Images/practicebalisong.jpg" alt="Practice trainer" /><div class="gallery-caption"><strong class="g-name">Prototype Trainer</strong><span class="g-meta">PLA · Example</span></div></div>
+          <div class="gallery-card" data-category="replacement-parts"><img src="Images/Jar.jpg" alt="Jar topper" /><div class="gallery-caption"><strong class="g-name">Jar Topper Spout</strong><span class="g-meta">PLA · Example</span></div></div>
+          <div class="gallery-card" data-category="hobby-projects"><img src="Images/Flexi Rex_20260221_215634_0000.jpg" alt="Articulated rex" /><div class="gallery-caption"><strong class="g-name">Articulated Rex</strong><span class="g-meta">PLA · Example</span></div></div>
+        </div>
+      </section>
 
-    <section id="gallery" class="section section-alt gallery-section">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Gallery</p>
-          <h2>Example Gallery</h2>
+      <!-- Process timeline -->
+      <section id="process" class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-label">How It Works</p>
+            <h2>Our Process</h2>
+          </div>
+          <p>A clear, professional workflow from idea to delivery.</p>
         </div>
-        <p>Example gallery showcasing previous custom prints and projects.</p>
-        <p class="photo-note">Colors shown in photos may vary. Customers can choose their preferred filament color when ordering.</p>
-        <p class="photo-note">Some product photos are examples only. Final appearance may vary depending on filament color and print settings.</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-card"><img src="Images/20260624_163703.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164254.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164514.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164518.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164552.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164633.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164639.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164714.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164804.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164808.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164905.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164910.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_164953.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_165044.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/20260624_165130.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/carrotswordclosed.jpg" alt="Carrot Prop" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~8ft (example)</span></div></div>
-        <div class="gallery-card"><img src="Images/carrotswordopen1.jpg" alt="Carrot Prop" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~8ft (example)</span></div></div>
-        <div class="gallery-card"><img src="Images/carrotswordopen2.jpg" alt="Carrot Prop" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~8ft (example)</span></div></div>
-        <div class="gallery-card"><img src="Images/dragon.jpg" alt="Dragon Figurine" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~6"</span></div></div>
-        <div class="gallery-card"><img src="Images/ethanmakesheader.jpg" alt="Example Print" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/FBAeaglespendant.jpg" alt="Pendant" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Small</span></div></div>
-        <div class="gallery-card"><img src="Images/fidgetpumpkin.jpg" alt="Fidget Spinner" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~2.5"</span></div></div>
-        <div class="gallery-card"><img src="Images/fidgetspinnerillusion.jpg" alt="Fidget Spinner" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~2.5"</span></div></div>
-        <div class="gallery-card"><img src="Images/flexi cat.jpg" alt="Flexi Cat" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/Flexi Rex_20260221_215634_0000.jpg" alt="Articulated Rex" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~5"</span></div></div>
-        <div class="gallery-card"><img src="Images/flexieasterbunny.jpg" alt="Easter Bunny" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/guitar accesorie.jpg" alt="Guitar Accessory" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Small</span></div></div>
-        <div class="gallery-card"><img src="Images/guitarpick.jpg" alt="Guitar Pick" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~1"</span></div></div>
-        <div class="gallery-card"><img src="Images/hogwartscastle.jpg" alt="Castle Model" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/Jar.jpg" alt="Jar Topper Spout" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Small</span></div></div>
-        <div class="gallery-card"><img src="Images/knittedsquid.jpg" alt="Knitted Squid" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/knittedsquid2.jpg" alt="Knitted Squid" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/no or yes spinner.jpg" alt="Spinner" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: ~2.5"</span></div></div>
-        <div class="gallery-card"><img src="Images/practicebalisong.jpg" alt="Practice Balisong" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/toilet.jpg" alt="Novelty" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Varies</span></div></div>
-        <div class="gallery-card"><img src="Images/Wallet.jpg" alt="Sliding Wallet" /><div class="gallery-caption"><strong class="g-name"></strong><span class="g-meta">PLA · Size: Small</span></div></div>
-      </div>
-    </section>
+        <ol class="timeline">
+          <li><strong> </strong><span>Share your concept or file.</span></li>
+          <li><strong> </strong><span>We provide a transparent quote.</span></li>
+          <li><strong> </strong><span>CAD or adjustments are prepared.</span></li>
+          <li><strong> </strong><span>You review and approve the final design.</span></li>
+          <li><strong> </strong><span>High-quality printing with tuned profiles.</span></li>
+          <li><strong> </strong><span>Pickup or local delivery arranged.</span></li>
+        </ol>
+      </section>
 
-    <section id="media" class="section">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Media</p>
-          <h2>Video Showcase</h2>
+      <!-- Quote request form -->
+      <section id="build" class="section section-alt">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Request a Quote</p>
+            <h2>Start Your Project</h2>
+          </div>
+          <p>Tell us about your project and we'll get back with a detailed quote.</p>
         </div>
-        <p>Real build footage and finished products.</p>
-      </div>
-      <div class="video-grid">
-        <div class="video-card">
-          <video src="Videos/practicebalisong.mp4" autoplay muted loop playsinline></video>
-          <h3>Practice Balisong</h3>
+        <div class="build-grid">
+          <form id="order-form" class="build-form" aria-label="Quote request form">
+            <label>
+              Name
+              <input type="text" id="builder-name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="builder-email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Project Category
+              <select id="project-category">
+                <option value="custom-designs">Custom Designs</option>
+                <option value="functional-parts">Functional Parts</option>
+                <option value="home-organization">Home Organization</option>
+                <option value="desk-accessories">Desk Accessories</option>
+                <option value="gifts-decorations">Gifts & Decorations</option>
+                <option value="prototypes">Prototypes & Projects</option>
+                <option value="replacement-parts">Replacement Parts</option>
+                <option value="hobby-projects">Hobby & Maker Projects</option>
+              </select>
+            </label>
+            <label>
+              Project Description
+              <textarea id="description" rows="4" placeholder="Describe your project, goals, and any constraints" required></textarea>
+            </label>
+            <label>
+              Preferred Filament Color
+              <select id="filament-color">
+                <option value="natural">Natural / Default</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+              </select>
+            </label>
+            <label>
+              Budget Range
+              <select id="budget-range">
+                <option value="budget">Under $25</option>
+                <option value="standard">$25–$75</option>
+                <option value="premium">$75–$250</option>
+                <option value="custom">$250+</option>
+              </select>
+            </label>
+            <div class="estimate-panel">
+              <span>Typical turnaround</span>
+              <strong id="estimate-value">2–5 business days</strong>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Quote</button>
+            <p id="order-feedback" class="form-message" role="status"></p>
+          </form>
+          <div class="build-highlights">
+            <div class="feature-card">
+              <h3>Personalized Support</h3>
+              <p>Direct communication through design and printing.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Precision Printing</h3>
+              <p>Consistent results on a Bambu Lab A1 with tuned profiles.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Local Service</h3>
+              <p>Pickup and local delivery options available.</p>
+            </div>
+          </div>
         </div>
-        <div class="video-card">
-          <video src="Videos/fingerclaw.mp4" autoplay muted loop playsinline></video>
-          <h3>Finger Claw</h3>
-        </div>
-        <div class="video-card">
-          <video src="Videos/swappableletterssign.mp4" autoplay muted loop playsinline></video>
-          <h3>Swap Letters Sign</h3>
-        </div>
-        <div class="video-card">
-          <video src="Videos/3dprintedlamboedit.mp4" autoplay muted loop playsinline></video>
-          <h3>Lambo Print</h3>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="build" class="section section-alt">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Custom Order Builder</p>
-          <h2>Build Your Print</h2>
+      <!-- Trust / Why choose -->
+      <section id="trust" class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Why Choose</p>
+            <h2>Why Choose Ethan's 3D Prints?</h2>
+          </div>
+          <p>Professional service, clear pricing, and quality-first execution.</p>
         </div>
-        <p>Have an idea for a custom print? Whether it's a replacement part, desk accessory, gift, decoration, organizer, prototype, or completely original creation, Ethan's 3D Prints can bring your idea to life. Pricing is based on size, material usage, print time, and design complexity.</p>
-      </div>
-      <div class="build-grid">
-        <form id="order-form" class="build-form" aria-label="Custom order form">
+        <div class="trust-grid">
+          <article class="trust-card"><h3>Custom Solutions</h3><p>Design and produce tailored parts and products.</p></article>
+          <article class="trust-card"><h3>Precision Printing</h3><p>Fine details and consistent tolerances for reliable parts.</p></article>
+          <article class="trust-card"><h3>Fast Turnaround</h3><p>Rush options and predictable lead times.</p></article>
+          <article class="trust-card"><h3>Local Service</h3><p>Personal pickup, delivery, and support in Illinois.</p></article>
+          <article class="trust-card"><h3>Personalized Support</h3><p>Direct collaboration from idea to finished part.</p></article>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section section-alt">
+        <div class="section-header">
+          <div>
+            <p class="section-label">FAQ</p>
+            <h2>Common Questions</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>How do I submit a file or idea?</summary>
+            <p>Use the quote form to attach details; STL uploads are accepted and we can refine designs if needed.</p>
+          </details>
+          <details>
+            <summary>What materials do you use?</summary>
+            <p>We commonly use PLA and PETG; other materials are available on request. Material choice affects strength and finish.</p>
+          </details>
+          <details>
+            <summary>How is pricing calculated?</summary>
+            <p>Pricing considers size, material, print time, and design complexity. We provide transparent quotes before production.</p>
+          </details>
+          <details>
+            <summary>Do you offer rush printing?</summary>
+            <p>Yes — ask about rush options when submitting your request.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Reviews / testimonials -->
+      <section id="reviews" class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Reviews</p>
+            <h2>Trusted by Customers</h2>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Exceptional attention to detail — my prototype fit perfectly."</p>
+            <span>— Aiden C.</span>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Fast turnaround and clear communication. Highly recommended."</p>
+            <span>— Priya S.</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Filament color showcase -->
+      <section id="colors" class="section section-alt">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Filament Colors</p>
+            <h2>Available Filament Options</h2>
+          </div>
+        </div>
+        <div class="color-palette">
+          <div class="color-swatch" aria-label="Black" style="background:#0b0b0b"></div>
+          <div class="color-swatch" aria-label="White" style="background:#f7f7f8"></div>
+          <div class="color-swatch" aria-label="Red" style="background:#d64545"></div>
+          <div class="color-swatch" aria-label="Blue" style="background:#4d9cff"></div>
+          <div class="color-swatch" aria-label="Green" style="background:#34b27a"></div>
+          <div class="color-swatch" aria-label="Natural" style="background:#e6d9c6"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Ready to Start?</h2>
+          </div>
+          <p>Questions or custom requests — get in touch and we'll respond promptly.</p>
+        </div>
+        <form id="contact-form" class="contact-form" aria-label="Contact form">
           <label>
-            Your Name
-            <input type="text" id="builder-name" placeholder="Your name" required />
+            Name
+            <input type="text" id="client-name" placeholder="Your name" required />
           </label>
           <label>
             Email
-            <input type="email" id="builder-email" placeholder="you@example.com" required />
+            <input type="email" id="client-email" placeholder="you@example.com" required />
           </label>
           <label>
-            Upload STL File
-            <input type="file" id="upload" accept=".stl" />
+            Message
+            <textarea id="client-request" rows="3" placeholder="How can we help?" required></textarea>
           </label>
-          <label>
-            Describe your idea
-            <textarea id="description" rows="4" placeholder="e.g. custom phone stand, model, or gift design"></textarea>
-          </label>
-          <div class="form-row">
-            <label>
-              Size
-              <select id="size">
-                <option value="small">Small</option>
-                <option value="medium" selected>Medium</option>
-                <option value="large">Large</option>
-              </select>
-            </label>
-            <label>
-              Material
-              <select id="material">
-                <option value="PLA" selected>PLA</option>
-                <option value="PETG">PETG</option>
-                <option value="ABS">ABS</option>
-              </select>
-            </label>
-          </div>
-          <div class="estimate-panel">
-            <span>Estimated turnaround</span>
-            <strong id="estimate-value">2-4 days</strong>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit Request</button>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="contact-message" class="form-message" role="status"></p>
         </form>
-        <div class="build-highlights">
-          <div class="feature-card">
-            <h3>Fast Turnaround</h3>
-            <p>Print-ready workflow for small runs and prototypes.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Quality Finish</h3>
-            <p>Layer smoothing, strong infill, and premium settings for every print.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Trusted Materials</h3>
-            <p>PLA, PETG, and ABS options for durability and aesthetic appeal.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured" class="section">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Featured Prints</p>
-          <h2>Best Sellers</h2>
-        </div>
-      </div>
-      <div class="carousel-row" aria-label="Featured prints carousel">
-        <div class="carousel-card">
-          <span class="carousel-tag">Best Seller</span>
-          <h3>Modular Desk Stand</h3>
-          <p>Strong, sleek support for keyboards and screens.</p>
-        </div>
-        <div class="carousel-card">
-          <span class="carousel-tag">New</span>
-          <h3>Spiral Fidget</h3>
-          <p>Eye-catching motion piece with satisfying spin.</p>
-        </div>
-        <div class="carousel-card">
-          <span class="carousel-tag">Complex</span>
-          <h3>Mechanical Puzzle</h3>
-          <p>Intricate interlocking rings and gears.</p>
-        </div>
-        <div class="carousel-card">
-          <span class="carousel-tag">Gift</span>
-          <h3>Custom Name Plaque</h3>
-          <p>Personalized keepsake with polished edges.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section section-alt">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Why Choose Ethan's 3D Prints?</p>
-          <h2>Why Choose Ethan's 3D Prints?</h2>
-        </div>
-        <p>Designed, printed, and assembled by Ethan. All prints are produced on a Bambu Lab A1 printer for consistent quality and precision.</p>
-      </div>
-      <div class="about-grid why-choose">
-        <div class="about-card">
-          <h3>Consistent Quality</h3>
-          <p>Carefully tuned profiles and attention to detail for crisp, reliable prints.</p>
-        </div>
-        <div class="about-card">
-          <h3>Personal Service</h3>
-          <p>Direct communication with Ethan through the entire design and print process.</p>
-        </div>
-        <div class="about-card">
-          <h3>Custom Design Support</h3>
-          <p>Design refinement and practical advice to make your idea printable and functional.</p>
-        </div>
-        <div class="about-card">
-          <h3>Transparent Pricing</h3>
-          <p>Clear quotes based on size, material, print time, and complexity—no hidden fees.</p>
-        </div>
-        <div class="about-card">
-          <h3>Local Pickup & Delivery</h3>
-          <p>Flexible pickup or local delivery options to make receiving your prints easy.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="reviews" class="section">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Reviews</p>
-          <h2>Trusted by Customers</h2>
-        </div>
-      </div>
-      <form id="review-form" class="review-form" aria-label="Submit a review">
-        <label>
-          Name (optional)
-          <input type="text" id="review-name" placeholder="Your name" />
-        </label>
-        <label>
-          Rating
-          <select id="review-rating">
-            <option value="5">★★★★★</option>
-            <option value="4">★★★★☆</option>
-            <option value="3">★★★☆☆</option>
-            <option value="2">★★☆☆☆</option>
-            <option value="1">★☆☆☆☆</option>
-          </select>
-        </label>
-        <label>
-          Comment
-          <textarea id="review-comment" rows="4" placeholder="Share what you liked about the print"></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary">Submit Review</button>
-        <p id="review-message" class="form-message" role="status"></p>
-      </form>
-      <div class="reviews-grid">
-        <article class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>"The custom dragon came out perfect and the shipping was fast. Will order again."</p>
-          <span>— Sarah W.</span>
-        </article>
-        <article class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>"Excellent quality and attention to detail. Ethan made a great desk organizer."</p>
-          <span>— Marcus D.</span>
-        </article>
-        <article class="review-card">
-          <div class="stars">★★★★☆</div>
-          <p>"Great communication and the print looked amazing in PETG."</p>
-          <span>— Lily E.</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-alt">
-      <div class="section-header">
-        <div>
-          <p class="section-label">Contact</p>
-          <h2>Ready to Order?</h2>
-        </div>
-      </div>
-      <form id="contact-form" class="contact-form" aria-label="Contact and order form">
-        <label>
-          Your Name
-          <input type="text" id="client-name" placeholder="Ethan prints customer" required />
-        </label>
-        <label>
-          Email
-          <input type="email" id="client-email" placeholder="you@example.com" required />
-        </label>
-        <label>
-          What do you want?
-          <textarea id="client-request" rows="3" placeholder="Describe your project or order" required></textarea>
-        </label>
-        <label>
-          Project scope
-          <select id="budget-range">
-            <option value="small">Small model</option>
-            <option value="medium" selected>Medium print</option>
-            <option value="large">Large build</option>
-            <option value="prototype">Prototype / multi-part project</option>
-          </select>
-        </label>
-        <button type="submit" class="btn btn-primary">Send Request</button>
-        <p id="contact-message" class="form-message" role="status"></p>
-      </form>
-    </section>
+      </section>
   </main>
 
   <footer class="footer">
